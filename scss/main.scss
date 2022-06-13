@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 * {
   margin: 0;
@@ -21,7 +21,7 @@ a {
 
 //Main styling
 section {
- background-color:rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   margin-left: 30vh;
   height: 100vh;
 }
@@ -49,20 +49,19 @@ section {
         font-size: 1.5rem;
       }
       &:hover {
-       border: 2px solid white;
+        border: 2px solid white;
         background-color: black;
       }
     }
   }
 }
-nav a li{
- font-family: 'Comfortaa', cursive;
+nav a li {
+  font-family: "Comfortaa", cursive;
 }
-.font-change{
- font-family: 'Sacramento', cursive;
+.font-change {
+  font-family: "Sacramento", cursive;
 }
 .intro-main {
-  
   display: grid;
   place-content: center;
   .intro-main-div {
@@ -74,7 +73,8 @@ nav a li{
       h2 {
         font-size: 2.5rem;
       }
-      p {font-family: 'Comfortaa', cursive;
+      p {
+        font-family: "Comfortaa", cursive;
         font-size: 1rem;
         line-height: 1.5;
       }
@@ -83,8 +83,8 @@ nav a li{
       object-fit: contain;
     }
     .btn {
-     border: 1.5px solid palevioletred;
-     background-color: transparent;
+      border: 1.5px solid palevioletred;
+      background-color: transparent;
       margin: 1.5em 0 0 0;
       width: 130px;
       height: 40px;
@@ -102,19 +102,21 @@ nav a li{
     text-align: center;
   }
   #sideBar {
-   height: 70vh;
+    height: 70vh;
     display: none;
     width: 100%;
-   .sideBar__Nav{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-
- .sideBar__Navicon{
-  height: 14vh;
- }
-   } 
-   }
+    .sideBar__Nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sideBar__Navicon {
+        height: 14vh;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
   #menu {
     position: fixed;
     display: block;
@@ -131,7 +133,6 @@ nav a li{
     z-index: 9999;
     i {
       font-size: 2.5rem;
-      
     }
   }
   .intro-main {
@@ -140,12 +141,12 @@ nav a li{
       justify-items: center;
       margin: 0;
       align-items: center;
-      div{
-       margin: 0.5em 1.5em;
-       text-align: justify;
-       p{
-        line-height: 1.1;
-       }
+      div {
+        margin: 0.5em 1.5em;
+        text-align: justify;
+        p {
+          line-height: 1.1;
+        }
       }
     }
   }
