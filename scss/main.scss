@@ -17,8 +17,8 @@ a {
 section {
   height: 100vh;
 }
-.menu,
-.cross {
+#menu,
+#cross {
   color: black;
   display: none;
 }
@@ -53,14 +53,20 @@ section {
   #sideBar {
     display: none;
   }
-  .menu {
+  #menu {
     position: fixed;
     display: block;
-  }
-  .cross {
+   
+    i {
+   padding: 0.5em;
+     font-size: 2.5rem;
+   }
+   }
+  #cross {
     position: fixed;
     top: 7px;
     left: 240px;
+    z-index: 9999;
     i {
       font-size: 2rem;
     }

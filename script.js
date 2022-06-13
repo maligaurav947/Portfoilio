@@ -24,14 +24,16 @@ Malí Gaurav
 
 //
 
-const fasolid = document.querySelector(".menu");
-const closeBtn = document.querySelectorAll(".cross");
+const fasolid = document.getElementById("menu");
+const closeBtn = document.getElementById("cross");
 const sideBar = document.getElementById("sideBar");
 
 fasolid.addEventListener("click", function () {
   sideBar.style.display = "block";
-  sideBar.style.width = "100vw";
+  closeBtn.style.display = "block";
 });
-const stylingfasoild = function () {
-  sideBar.style.display = "block";
-};
+
+closeBtn.addEventListener("click", function () {
+  sideBar.style.display = "none";
+  closeBtn.style.display = "none";
+});
