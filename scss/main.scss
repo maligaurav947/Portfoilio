@@ -100,50 +100,49 @@ nav a li {
     }
   }
 }
-.project-main{
- display: grid;
- justify-content: center;
- text-align: center;
- h2{
-  margin: 1em 0 0;
-  font-size: 2.5rem;
- }
-.cardcollection{
- display: flex;
- height:10vh;
- align-items: center;
- justify-content: center;
- .card{
-  border-radius: 30px;
-  background-color: crimson;
-  width: 30.33%;
-  padding: 0 0 0.6em;
-  margin: 0 0.3em;
-  img{
-   object-fit: contain;
-   width: 100%;
-   opacity: 0.4;
-border-top-left-radius: 30px;
-border-top-right-radius: 30px;
-   &:hover,&:focus{
-    opacity: 0.9;
-
-   }
+.project-main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    margin: 1em 0 0;
+    font-size: 2.5rem;
   }
-  h3{
-   font-size: 1.1rem;
-   margin-top: 0.5em;
-   padding: 0 1em;
+  .cardcollection {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    .card {
+      border-radius: 30px;
+      background-color: crimson;
+      width: 30.33%;
+      padding: 0 0 0.6em;
+      margin: 0 0.3em;
+      img {
+        object-fit: contain;
+        width: 100%;
+        opacity: 0.4;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        &:hover,
+        &:focus {
+          opacity: 0.9;
+        }
+      }
+      h3 {
+        font-size: 1.1rem;
+        margin-top: 0.5em;
+        padding: 0 1em;
+      }
+      p {
+        line-height: 1.3;
+        font-size: 0.9rem;
+        padding: 0 1em;
+        margin: 1.5em 0.3em 0.6em;
+      }
+    }
   }
-  p{
-   line-height: 1.3;
-   font-size: 0.9rem;
-   padding: 0 1em;
-   margin: 1.5em 0.3em 0.6em ;
-  }
- }
- 
-}
 }
 //For small Screen
 
@@ -202,26 +201,27 @@ border-top-right-radius: 30px;
       }
     }
   }
-  .project-main{
-   height: 100%;
-   h2{
-    margin: 2rem 0;
-   }
-   .cardcollection{
-    flex-direction: column;
+  .project-main {
     height: 100%;
-   .card{
-    margin: 0.7em 0; background-color: rgba(220, 20, 60, 0.695);
-    width: 80%; border-radius: 20px;
-    img{
-
-     border-top-left-radius: 20px;
-border-top-right-radius: 20px;
+    h2 {
+      margin: 2rem 0;
     }
-    p{
-     text-align: justify;
+    .cardcollection {
+      flex-direction: column;
+      height: 100%;
+      .card {
+        margin: 0.7em 0;
+        background-color: rgba(220, 20, 60, 0.695);
+        width: 80%;
+        border-radius: 20px;
+        img {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+        p {
+          text-align: justify;
+        }
+      }
     }
-   }
-   }
   }
 }
