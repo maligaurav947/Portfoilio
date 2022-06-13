@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Testmoninal
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+//Main styling
+section {
+  height: 100vh;
+}
+.menu,
+.cross {
+  color: black;
+  display: none;
+}
+
+#sideBar {
+  position: fixed;
+  width: 30vh;
+  height: 100vh;
+  background-color: darkgray;
+  .sideBar__Nav {
+    .sideBar__Navicon {
+      font-weight: 200;
+      font-size: 1.3rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      i {
+        justify-self: center;
+        font-size: 2rem;
+      }
+      &:hover {
+        background-color: chocolate;
+      }
+    }
+  }
+}
+
+//For small Screen
+
+@media screen and (max-width: 756px) {
+  #sideBar {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    display: block;
+  }
+  .cross {
+    position: fixed;
+    top: 7px;
+    left: 240px;
+    i {
+      font-size: 2rem;
+    }
+  }
+  body {
+    background-color: aqua;
+  }
+}
