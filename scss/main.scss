@@ -51,7 +51,6 @@ section {
 }
 .intro-main {
   background-color: cornsilk;
-
   display: grid;
   place-content: center;
   .intro-main-div {
@@ -70,8 +69,8 @@ section {
     img {
       object-fit: contain;
     }
-    .btn{
-     margin: 1.5em 0 0 0;
+    .btn {
+      margin: 1.5em 0 0 0;
     }
   }
 }
@@ -97,7 +96,6 @@ section {
     }
   }
   #cross {
-    position: relative;
     position: fixed;
     top: 7px;
     left: 240px;
@@ -108,5 +106,17 @@ section {
   }
   body {
     background-color: aqua;
+  }
+  .intro-main {
+    .intro-main-div {
+      flex-direction: column;
+      justify-items: center;
+      margin: 0;
+      align-items: center;
+      div{
+       margin: 0.5em 1.5em;
+       text-align: justify;
+      }
+    }
   }
 }
