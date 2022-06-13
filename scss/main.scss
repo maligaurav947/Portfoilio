@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  color: white;
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -17,6 +21,7 @@ a {
 
 //Main styling
 section {
+ background-color:rgba(0,0,0,0.9);
   margin-left: 30vh;
   height: 100vh;
 }
@@ -30,7 +35,7 @@ section {
   position: fixed;
   width: 30vh;
   height: 100vh;
-  background-color: darkgray;
+  background-color: rgba(0, 0, 0, 0.7);
   .sideBar__Nav {
     .sideBar__Navicon {
       font-weight: 200;
@@ -41,16 +46,23 @@ section {
       height: 20vh;
       i {
         justify-self: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       &:hover {
-        background-color: chocolate;
+       border: 2px solid white;
+        background-color: black;
       }
     }
   }
 }
+nav a li{
+ font-family: 'Comfortaa', cursive;
+}
+.font-change{
+ font-family: 'Sacramento', cursive;
+}
 .intro-main {
-  background-color: cornsilk;
+  
   display: grid;
   place-content: center;
   .intro-main-div {
@@ -62,15 +74,21 @@ section {
       h2 {
         font-size: 2.5rem;
       }
-      p {
+      p {font-family: 'Comfortaa', cursive;
         font-size: 1rem;
+        line-height: 1.5;
       }
     }
     img {
       object-fit: contain;
     }
     .btn {
+     border: 1.5px solid palevioletred;
+     background-color: transparent;
       margin: 1.5em 0 0 0;
+      width: 130px;
+      height: 40px;
+      font-size: 1rem;
     }
   }
 }
@@ -128,6 +146,9 @@ section {
       div{
        margin: 0.5em 1.5em;
        text-align: justify;
+       p{
+        line-height: 1.1;
+       }
       }
     }
   }
