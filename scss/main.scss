@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 //Testmoninal
@@ -15,6 +17,7 @@ a {
 
 //Main styling
 section {
+  margin-left: 30vh;
   height: 100vh;
 }
 #menu,
@@ -46,24 +49,55 @@ section {
     }
   }
 }
+.intro-main {
+  background-color: cornsilk;
+
+  display: grid;
+  place-content: center;
+  .intro-main-div {
+    display: flex;
+    align-items: center;
+    margin: 0 2.5vh;
+    div {
+      margin: 0 15vh 0 2.5vh;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    img {
+      object-fit: contain;
+    }
+    .btn{
+     margin: 1.5em 0 0 0;
+    }
+  }
+}
 
 //For small Screen
 
 @media screen and (max-width: 756px) {
+  section {
+    padding: 0.8em;
+    margin: 0;
+    text-align: center;
+  }
   #sideBar {
     display: none;
   }
   #menu {
     position: fixed;
     display: block;
-   
+
     i {
-   padding: 0.5em;
-     font-size: 2.5rem;
-   }
-   }
+      padding: 0.5em;
+      font-size: 2.5rem;
+    }
+  }
   #cross {
-   position: relative;
+    position: relative;
     position: fixed;
     top: 7px;
     left: 240px;
