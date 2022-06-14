@@ -294,6 +294,7 @@ h2{
 
   //Sidebar For Small Screen
   #sideBar {
+    background-color: rgba(0, 0, 0, 0.717);
     height: 70vh;
     display: none;
     width: 100%;
@@ -302,7 +303,7 @@ h2{
       flex-direction: column;
       align-items: center;
       .sideBar__Navicon {
-        height: 14vh;
+        height: 18vh;
         &:hover {
           background: none;
         }

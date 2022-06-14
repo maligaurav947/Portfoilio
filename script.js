@@ -27,9 +27,6 @@ var typed;
 });
 */
 
-AutoType("animation", "Hello", 150);
-AutoBackspace("animation", 150);
-
 const fasolid = document.getElementById("menu");
 const closeBtn = document.getElementById("cross");
 const sideBar = document.getElementById("sideBar");
