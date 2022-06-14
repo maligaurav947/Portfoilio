@@ -122,6 +122,7 @@ nav a li {
       width: 30.33%;
       padding: 0 0 0.6em;
       margin: 0 0.3em;
+
       img {
         object-fit: contain;
         width: 100%;
@@ -167,21 +168,93 @@ nav a li {
         background-color: rgba(0, 0, 0, 0.437);
         width: 90%;
         height: 30px;
+        animation-name: htmlcss-anim;
+        animation-duration: 1500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        @keyframes htmlcss-anim {
+          25% {
+            width: 10%;
+          }
+          50% {
+            width: 35%;
+          }
+          75% {
+            width: 85%;
+          }
+          100% {
+            width: 90%;
+          }
+        }
       }
       .css-frameWork {
         background-color: rgba(0, 0, 0, 0.437);
         width: 65%;
         height: 30px;
+        animation-name: cssFrame-anim;
+        animation-duration: 1500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        @keyframes cssFrame-anim {
+          25% {
+            width: 5%;
+          }
+          50% {
+            width: 50%;
+          }
+          75% {
+            width: 55%;
+          }
+          100% {
+            width: 65%;
+          }
+        }
       }
       .js {
         background-color: rgba(0, 0, 0, 0.437);
         width: 40%;
         height: 30px;
+        animation-name: jskey-anim;
+        animation-duration: 1500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        @keyframes jskey-anim {
+          25% {
+            width: 50%;
+          }
+          50% {
+            width: 65%;
+          }
+          75% {
+            width: 30%;
+          }
+          100% {
+            width: 40%;
+          }
+        }
       }
       .github {
         background-color: rgba(0, 0, 0, 0.437);
         width: 75%;
         height: 30px;
+        animation-name: githubkey-anim;
+        animation-duration: 1500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        @keyframes githubkey-anim {
+          25% {
+            width: 0%;
+          }
+          50% {
+            width: 45%;
+          }
+          75% {
+            width: 100%;
+          }
+          100% {
+            width: 75%;
+          }
+        }
       }
     }
   }
