@@ -1,6 +1,8 @@
+//Import Font
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
+//Styling For Global
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +35,6 @@ a {
     background-color: crimson;
   }
 }
-//Main styling
 section {
   background-color: rgba(0, 0, 0, 0.9);
   margin-left: 30vh;
@@ -44,7 +45,15 @@ section {
   color: black;
   display: none;
 }
+nav a li {
+  font-family: "Comfortaa", cursive;
+}
+.font-change {
+  color: crimson;
+  font-family: "Sacramento", cursive;
+}
 
+//Sidebar For Big Screen
 #sideBar {
   position: fixed;
   width: 30vh;
@@ -69,14 +78,10 @@ section {
     }
   }
 }
-nav a li {
-  font-family: "Comfortaa", cursive;
-}
-.font-change {
-  color: crimson;
-  font-family: "Sacramento", cursive;
-}
-.intro-main {
+
+//Introduction Section BIG Screen
+#intro-main {
+  transition: 5000ms linear;
   display: grid;
   place-content: center;
   .intro-main-div {
@@ -100,7 +105,9 @@ nav a li {
     }
   }
 }
-.project-main {
+
+//Project Section For BIG Screen
+#project-main {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -144,29 +151,13 @@ nav a li {
     }
   }
 }
-//For small Screen
 
+//Styling For Small Screen
 @media screen and (max-width: 756px) {
   section {
     padding: 0.8em;
     margin: 0;
     text-align: center;
-  }
-  #sideBar {
-    height: 70vh;
-    display: none;
-    width: 100%;
-    .sideBar__Nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .sideBar__Navicon {
-        height: 14vh;
-        &:hover {
-          background: none;
-        }
-      }
-    }
   }
   #menu {
     position: fixed;
@@ -186,7 +177,27 @@ nav a li {
       font-size: 2.5rem;
     }
   }
-  .intro-main {
+
+  //Sidebar For Small Screen
+  #sideBar {
+    height: 70vh;
+    display: none;
+    width: 100%;
+    .sideBar__Nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sideBar__Navicon {
+        height: 14vh;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+
+  //Introduction Section Small Screen
+  #intro-main {
     .intro-main-div {
       flex-direction: column;
       justify-items: center;
@@ -201,7 +212,8 @@ nav a li {
       }
     }
   }
-  .project-main {
+  //Project Section For Small Screen
+  #project-main {
     height: 100%;
     h2 {
       margin: 2rem 0;
