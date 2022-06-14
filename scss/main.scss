@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 //Styling For Global
+
 * {
   margin: 0;
   padding: 0;
@@ -110,18 +111,23 @@ nav a li {
   display: grid;
   justify-content: center;
   text-align: center;
-
+  height: 100vh;
+h2{
+  margin-bottom: 0.6em;
+}
   .cardcollection {
     display: flex;
-    height: 10vh;
     align-items: center;
     justify-content: center;
+
     .card {
+     object-fit: cover;
+      overflow: hidden;
       border-radius: 30px;
       background-color: crimson;
       width: 30.33%;
       padding: 0 0 0.6em;
-      margin: 0 0.3em;
+      margin: 0em 0.3em;
 
       img {
         object-fit: contain;

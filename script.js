@@ -1,11 +1,6 @@
 "user Strict";
 /*
-var typed = new Typed(".auto-type", {
-  strings: ["Hello", "नमस्ते", "Hola", "Bonjour", "Привет", "Buna ziua"],
-  typeSpeed: 150,
-  loop: true,
-  backSpeed: 150,
-});
+
 */
 
 /*
@@ -20,9 +15,20 @@ Mali Gaurav
 माली गौरवी
 Malí Gaurav
 
-*/ //import Typed from "typed.js";
-
+ //
 //
+var typed;
+ typed = new Typed(".animation", {
+
+  strings: ["Hello", "नमस्ते", "Hola", "Bonjour", "Привет", "Buna ziua"],
+  typeSpeed: 150,
+  loop: true,
+  backSpeed: 150
+});
+*/
+
+AutoType("animation", "Hello", 150);
+AutoBackspace("animation", 150);
 
 const fasolid = document.getElementById("menu");
 const closeBtn = document.getElementById("cross");
