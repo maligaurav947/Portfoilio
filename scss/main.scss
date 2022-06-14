@@ -52,7 +52,11 @@ nav a li {
   color: crimson;
   font-family: "Sacramento", cursive;
 }
-
+.main-title {
+  margin: 1em 0 0;
+  font-family: "Comfortaa", cursive;
+  font-size: 2.5rem;
+}
 //Sidebar For Big Screen
 #sideBar {
   position: fixed;
@@ -90,10 +94,7 @@ nav a li {
     margin: 0 2.5vh;
     div {
       margin: 0 15vh 0 2.5vh;
-      h2 {
-        font-family: "Comfortaa", cursive;
-        font-size: 2.5rem;
-      }
+
       p {
         font-family: "Comfortaa", cursive;
         font-size: 1rem;
@@ -111,10 +112,7 @@ nav a li {
   display: grid;
   justify-content: center;
   text-align: center;
-  h2 {
-    margin: 1em 0 0;
-    font-size: 2.5rem;
-  }
+
   .cardcollection {
     display: flex;
     height: 10vh;
@@ -147,6 +145,45 @@ nav a li {
         font-size: 0.9rem;
         padding: 0 1em;
         margin: 1.5em 0.3em 0.6em;
+      }
+    }
+  }
+}
+
+// Skill Section For Big Screen
+#skill-main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  .skill-div {
+    text-align: left;
+    h4 {
+      font-size: 1rem;
+    }
+    .skill {
+      background-color: white;
+      width: 1000px;
+      margin: 1.5em 0;
+      height: 30px;
+      .html-css {
+        background-color: rgba(0, 0, 0, 0.437);
+        width: 90%;
+        height: 30px;
+      }
+      .css-frameWork {
+        background-color: rgba(0, 0, 0, 0.437);
+        width: 65%;
+        height: 30px;
+      }
+      .js {
+        background-color: rgba(0, 0, 0, 0.437);
+        width: 40%;
+        height: 30px;
+      }
+      .github {
+        background-color: rgba(0, 0, 0, 0.437);
+        width: 75%;
+        height: 30px;
       }
     }
   }
@@ -232,6 +269,27 @@ nav a li {
         }
         p {
           text-align: justify;
+        }
+      }
+    }
+  }
+
+  // Skill Section For small Screen
+  #skill-main {
+    .skill-div {
+      .skill {
+        width: 350px;
+        .html-css {
+          width: 90%;
+        }
+        .css-frameWork {
+          width: 65%;
+        }
+        .js {
+          width: 40%;
+        }
+        .github {
+          width: 75%;
         }
       }
     }
