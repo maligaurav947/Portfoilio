@@ -40,3 +40,10 @@ closeBtn.addEventListener("click", function () {
   sideBar.style.display = "none";
   closeBtn.style.display = "none";
 });
+
+
+//PreLoader
+const preLoader=document.getElementById('loader');
+function myFunction(){
+  preLoader.style.display='none';
+}
