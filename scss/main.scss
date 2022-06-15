@@ -13,13 +13,15 @@
 }
 //PRELOADER
 
-#loader{
-  background: rgb(255, 255, 255) url(https://raw.githubusercontent.com/maligaurav947/Portfoilio-New/master/img/Loader.gif) no-repeat center ;
+#loader {
+  background: rgb(255, 255, 255)
+    url(https://raw.githubusercontent.com/maligaurav947/Portfoilio-New/master/img/Loader.gif)
+    no-repeat center;
   background-size: 100px;
   width: 100vw;
   z-index: 99999;
   position: fixed;
-  height: 100vh;  
+  height: 100vh;
 }
 //Testmoninal
 li {
@@ -121,16 +123,16 @@ nav a li {
   justify-content: center;
   text-align: center;
   height: 100vh;
-h2{
-  margin-bottom: 0.6em;
-}
+  h2 {
+    margin-bottom: 0.6em;
+  }
   .cardcollection {
     display: flex;
     align-items: center;
     justify-content: center;
 
     .card {
-     object-fit: cover;
+      object-fit: cover;
       overflow: hidden;
       border-radius: 30px;
       background-color: crimson;
@@ -275,6 +277,53 @@ h2{
   }
 }
 
+//contact styling for big screen
+#contact-main {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  .contact-main__div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 0.8em 0.6em;
+    .input-info {
+      margin: 0 0.6em;
+      .form {
+        .label-list {
+          input {
+            padding: 0 0.3em;
+            text-align: unset;
+            color: black;
+            margin: 1em 0;
+            width: 500px;
+            height: 45px;
+            outline: none;
+            border: none;
+            font-size: 1.2rem;
+          }
+          textarea {
+            margin: 1em 0;
+            font-size: 1.2rem;
+            
+            min-height: 65px;
+            max-height: 180px;
+            
+            
+            max-width: 500px; 
+            width: 500px;
+            
+            padding: 0.2em 0.3em;
+            text-align:left;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
 //Styling For Small Screen
 @media screen and (max-width: 756px) {
   section {
@@ -380,5 +429,32 @@ h2{
         }
       }
     }
+  }
+  //contact styling for small screen
+  #contact-main {
+    h2{
+      margin: 2.5em 0;
+    }
+    .contact-main__div {
+      flex-direction: column;
+      .emb-map{
+        iframe{
+          width: 350px;
+        }
+      }
+      .input-info{
+        margin: 1.5em 0;
+        .form {
+          .label-list {
+            input{
+             width: 250px;
+            }
+            textarea{
+              width: 250px;
+            }
+          }
+      }
+    }
+  }
   }
 }

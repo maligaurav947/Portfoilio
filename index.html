@@ -176,8 +176,44 @@
         </div>
       </div>
     </section>
-    <section id="contact-main"></section>
-    <footer id="social-main"></footer>
+    <section id="contact-main">
+      <h2 class="main-title">Contact Form</h2>
+      <div class="contact-main__div">
+        <div class="emb-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29728.394822680973!2d74.86757448641607!3d21.348548463936865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdf2df9310caa83%3A0x11cf13f51b3b8d25!2sShirpur%2C%20Maharashtra%20425405!5e0!3m2!1sen!2sin!4v1655270152793!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="input-info">
+          <form action="https://formspree.io/f/xzbowwea" method="POST" class="form">
+            <label class="label-list">
+              Name: <br>
+              <input name="Name" type="text" />
+            </label>
+            <br>
+            <label class="label-list">
+              Email: <br>
+              <input name="Email" type="email" />
+            </label>
+            <br>
+            <label class="label-list">
+              Message:<br>
+              <textarea  name="message"></textarea>
+              </label>
+              <br>
+              <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer id="social-main mobile"></footer>
 
     <!-- Script Links -->
     <script src="./script.js"></script>
@@ -185,10 +221,6 @@
     <script>
       AOS.init();
     </script>
-    <script
-      src="https://gigabyte5671.github.io/AutoType/dist/autotype.min.js"
-      type="text/javascript"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
