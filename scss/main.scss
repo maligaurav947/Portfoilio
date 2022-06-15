@@ -447,13 +447,12 @@ nav a li {
         .form {
           .label-list {
             input{
-              background: none;
-              border-bottom: 1px solid rgba(220, 20, 60, 0.695);
+              font-size: 0.9rem;
              width: 350px;
             }
             textarea{
-              background: white;
-             width: 350px;
+              font-size: 0.9rem;
+              width: 350px;
             }
           }
       }
