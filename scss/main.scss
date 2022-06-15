@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 //Styling For Global
-
-* {
+* {  
   margin: 0;
   padding: 0;
   color: white;
@@ -134,18 +133,17 @@ nav a li {
     .card {
       object-fit: cover;
       overflow: hidden;
-      border-radius: 30px;
+      //border-radius: 30px;
       background-color: crimson;
       width: 30.33%;
       padding: 0 0 0.6em;
       margin: 0em 0.3em;
-
-      img {
+img {
         object-fit: contain;
         width: 100%;
         opacity: 0.4;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
+        //border-top-left-radius: 30px;
+        //border-top-right-radius: 30px;
         &:hover,
         &:focus {
           opacity: 0.9;
@@ -168,6 +166,8 @@ nav a li {
 
 // Skill Section For Big Screen
 #skill-main {
+
+  height: 110vh;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -179,7 +179,7 @@ nav a li {
     .skill {
       background-color: white;
       width: 1000px;
-      margin: 1.5em 0;
+      margin: 1em 0;
       height: 30px;
       .html-css {
         background-color: rgba(0, 0, 0, 0.437);
@@ -279,6 +279,10 @@ nav a li {
 
 //contact styling for big screen
 #contact-main {
+  h2{
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+  }
   height: 100%;
   display: grid;
   place-content: center;
@@ -412,6 +416,7 @@ nav a li {
 
   // Skill Section For small Screen
   #skill-main {
+    height: 70vh;
     .skill-div {
       .skill {
         width: 350px;
