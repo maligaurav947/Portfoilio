@@ -24,7 +24,7 @@
     <main id="sideBar">
       <nav class="sideBar__Nav">
         <a href="#intro-main">
-          <li class="sideBar__Navicon">
+          <li class="sideBar__Navicon" id="home">
             <i class="fa-solid fa-house"></i>Home
           </li>
         </a>
@@ -46,7 +46,7 @@
         </a>
       </nav>
     </main>
-    <section id="intro-main">
+    <section id="intro-main" class="intro">
       <div class="intro-main-div">
         <img src="./img/IMG_20211111_191130-01.jpeg" alt="" width="260px" />
         <div>
@@ -192,23 +192,27 @@
           </iframe>
         </div>
         <div class="input-info">
-          <form action="https://formspree.io/f/xzbowwea" method="POST" class="form">
+          <form
+            action="https://formspree.io/f/xzbowwea"
+            method="POST"
+            class="form"
+          >
             <label class="label-list">
-              Name: <br>
+              Name: <br />
               <input name="Name" type="text" />
             </label>
-            <br>
+            <br />
             <label class="label-list">
-              Email: <br>
+              Email: <br />
               <input name="Email" type="email" />
             </label>
-            <br>
+            <br />
             <label class="label-list">
-              Message:<br>
-              <textarea  name="message"></textarea>
-              </label>
-              <br>
-              <button type="submit" class="btn">Send</button>
+              Message:<br />
+              <textarea name="message"></textarea>
+            </label>
+            <br />
+            <button type="submit" class="btn">Send</button>
           </form>
         </div>
       </div>
@@ -221,6 +225,9 @@
     <script>
       AOS.init();
     </script>
+    <!-- <script>
+      import jump from "jump.js";
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
