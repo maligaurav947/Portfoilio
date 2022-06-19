@@ -77,6 +77,10 @@ nav a li {
   width: 30vh;
   height: 100vh;
   background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   .sideBar__Nav {
     .sideBar__Navicon {
       font-weight: 200;
@@ -89,8 +93,12 @@ nav a li {
         justify-self: center;
         font-size: 1.5rem;
       }
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.9);
+      &:hover,
+      &:focus {
+        color: greenyellow;
+        i {
+          color: greenyellow;
+        }
       }
     }
   }
@@ -329,8 +337,38 @@ nav a li {
     }
   }
 }
-#social-main{
-  display: none;
+
+#social-main {
+  background-color: #393e46a7;
+  height: 15vh;
+  display: grid;
+  place-content: center;
+  margin-left: 30vh;
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    a {
+      li {
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-weight: 900;
+        i {
+          padding-right: 0.2em;
+          font-size: 2.5rem;
+          color: black;
+        }
+        &:hover {
+          border-bottom: 3.5px solid brown;
+        }
+      }
+    }
+  }
 }
 
 //Styling For Small Screen
@@ -472,23 +510,20 @@ nav a li {
 
   //Footer only For Small Screen
   #social-main {
-    display: block;
-    background-color: #5ee6eb;
-    height: 15vh;
+    margin-left: 0;
     .social-icon {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      a{
+      a {
         li {
-        padding: 0 1em;
-        i {
-          font-size: 2.5rem;
-          color: black;
+          padding: 0 0.7em;
+          flex-direction: column;
+          i {
+            padding-bottom: 0.2em;
+          }
+          &:hover {
+            border-bottom: none;
+          }
         }
       }
     }
-  }
   }
 }

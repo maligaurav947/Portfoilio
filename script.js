@@ -20,16 +20,3 @@ const preLoader = document.getElementById("loader");
 function myFunction() {
   preLoader.style.display = "none";
 }
-/*
-const homeScroll = document.getElementById("home");
-
-homeScroll.addEventListener("click", function () {
-  jump(".intro", {
-    duration: 1000,
-    offset: 0,
-    callback: undefined,
-    easing: easeInOutQuad,
-    a11y: false,
-  });
-});
-*/
